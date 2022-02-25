@@ -4,7 +4,8 @@ import { Navbar } from "./component/index";
 function App() {
   return (
     <>
-      <Navbar />
+      <Navbar title={"textUtils"} />
+
     </>
   );
 }
