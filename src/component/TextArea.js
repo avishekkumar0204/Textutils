@@ -40,7 +40,7 @@ export default function TextArea(props) {
 
       <div className="container">
         <h3>Summary</h3>
-        <p> <span className='word-charcter-count-bg'>Words-{text.split(" ").length}</span> & <span className='bg-green'>Characters-{text.length}</span></p>
+        <p> <span className='word-charcter-count-bg'>Words-{text.split(" ").length}</span> & <span className='word-charcter-count-bg'>Characters-{text.length}</span></p>
 
 
       </div>
