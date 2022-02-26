@@ -15,7 +15,13 @@ export default function TextArea(props) {
     setText(newText);
   }
 
-  const [text, setText] = useState("Enter text here");
+  const changeToLowerCase = () => {
+    console.log("Changed to lower case");
+    let newText = text.toLowerCase();
+    setText(newText);
+  }
+
+  const [text, setText] = useState("");
 
   return (
     <>
@@ -28,7 +34,15 @@ export default function TextArea(props) {
           </div>
         </form>
 
-        <button className="btn btn-primary text-area-btn" onClick={changeToUpperCase}>Convert to Uppercase</button>
+        <button className="btn btn-primary text-area-btn mx-2" onClick={changeToUpperCase}>Convert to Uppercase</button>
+        <button className="btn btn-primary text-area-btn mx-2" onClick={changeToLowerCase}>Convert to LowerCase</button>
+      </div>
+
+      <div className="container">
+        <h3>Summary</h3>
+        <p> <span className='bg-green'>Words-{text.split(" ").length}</span> & <span className='bg-green'>Characters-{text.length}</span></p>
+
+
       </div>
 
     </>

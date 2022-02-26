@@ -6,3 +6,10 @@
 .text-area-btn {
     margin: 1rem 0rem;
 }
+
+.bg-green {
+    background-color: #fbf0f0;
+    color: #4e3030;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+}
