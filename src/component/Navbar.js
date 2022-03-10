@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react';
+
 import PropTypes from 'prop-types';
+import "./css/navbar.css";
+
 
 export default function Navbar(props) {
+
+
     return (
         <>
 
@@ -21,10 +26,10 @@ export default function Navbar(props) {
                             </li>
 
                         </ul>
-                        <form className="d-flex">
-                            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                            <button className="btn btn-warning" type="submit">Search</button>
-                        </form>
+                        <div className="form-check form-switch" id="abc" >
+                            <input className="form-check-input" type="checkbox" id="flexSwitchCheckDefault" onChange={() => { props.changeBg("white") }} />
+                            <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Dark Mode</label>
+                        </div>
                     </div>
                 </div>
             </nav>
